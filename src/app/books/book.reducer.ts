@@ -2,7 +2,7 @@ import { AddBook, RemoveBook } from './book.actions';
 import { createReducer, on } from "@ngrx/store";
 import { Book } from "../models/book";
 
-export const initialState: ReadonlyArray<Book> = [];
+export const initialState: Book[] = [];
 
 export const BookReducer = createReducer(
    initialState,
@@ -11,7 +11,7 @@ export const BookReducer = createReducer(
 );
 
 
-/* Why is a reducer called reducer?
+/* Why is a reducer called a reducer?
 
 The reducer takes an action and the current state and reduces them to one new state.
 
